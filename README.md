@@ -1,26 +1,15 @@
-# Lama Dev School Management Dashboard
+# Edu Management Dashboard
 
 ## Getting Started
 
-First, run the development server:
+1. create a .env file with the help of .sample.env
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. try command: npm i 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Create database.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. npx prisma migrate dev --name init  //to migrate prisma
 
-## Learn More
+5. npx ts-node prisma/seed.ts  //run this to insert some data to the database
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Lama Dev Youtube Channel](https://youtube.com/lamadev) 
-- [Next.js](https://nextjs.org/learn)
+6.run command: npm run dev
